@@ -11,12 +11,16 @@ class Imdupes < Formula
   depends_on "python@3.11"
 
   def install
-    venv = virtualenv_create(libexec, "python3")
-    ENV.prepend_path "PATH", venv.bin
+    venv_dir = libexec/"venv"
+    venv_dir.mkpath
 
-    system libexec/"bin/python3", "-m", "pip", "install", "-r", buildpath/"requirements.txt"
+    system Formula["python@3.11"].opt_bin/"python3", "-m", "venv", venv_dir
+    venv_python = venv_dir/"bin/python"
+    venv_pip = venv_dir/"bin/pip"
 
-    system "python3", "build.py"
+    system venv_pip, "install", "-r", buildpath/"requirements.txt"
+
+    system venv_python, "build.py"
     bin.install "dist/imdupes" => "imdupes"
   end
 
