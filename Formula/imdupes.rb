@@ -13,8 +13,8 @@ class Imdupes < Formula
   def install
     venv = virtualenv_create(libexec, "python3")
     ENV.prepend_path "PATH", venv.bin
-    
-    virtualenv_install_with_resources
+
+    system libexec/"bin/pip", "install", "-r", buildpath/"requirements.txt"
 
     system "python3", "build.py"
     bin.install "dist/imdupes" => "imdupes"
