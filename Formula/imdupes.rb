@@ -1,7 +1,7 @@
 class Imdupes < Formula
   include Language::Python::Virtualenv
 
-  desc "Versatile image deduplicator. Inspired by fdupes."
+  desc "Versatile image deduplicator"
   homepage "https://github.com/miketvo/imdupes"
   url "https://github.com/miketvo/imdupes/archive/refs/tags/v0.2.4.tar.gz"
   sha256 "daa0af5383ead7193f1b788dafa6733ae2ed568f477c9c5d6be5ca6a67ee6be3"
