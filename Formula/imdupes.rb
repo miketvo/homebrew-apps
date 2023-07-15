@@ -3,8 +3,8 @@ class Imdupes < Formula
 
   desc "Versatile image deduplicator"
   homepage "https://github.com/miketvo/imdupes"
-  url "https://github.com/miketvo/imdupes/archive/refs/tags/v0.2.4.tar.gz"
-  sha256 "daa0af5383ead7193f1b788dafa6733ae2ed568f477c9c5d6be5ca6a67ee6be3"
+  url "https://github.com/miketvo/imdupes/archive/refs/tags/v0.2.5.tar.gz"
+  sha256 "480dc17e1d87e56167459bf426c8e22b5ea0f91afb54b7c01cd89d7ae9e82d48"
   license "GPL-3.0-only"
   head "https://github.com/miketvo/imdupes.git", branch: "dev"
 
