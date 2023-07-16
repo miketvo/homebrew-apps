@@ -1,6 +1,6 @@
 # Mike's Homebrew Tap
 
-[@miketvo](https://github.com/miketvo)'s 3rd-party tap for [Homebrew](https://brew.sh), the The Missing Package Manager for macOS (or Linux).
+[@miketvo](https://github.com/miketvo)'s 3rd-party tap for [Homebrew](https://brew.sh), the Missing Package Manager for macOS (or Linux).
 
 Contains applications, utilities and scripts developed by [@miketvo](https://github.com/miketvo).
 
